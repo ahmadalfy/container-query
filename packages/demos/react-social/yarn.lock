@@ -1246,6 +1246,10 @@ enhanced-resolve@^3.3.0:
     object-assign "^4.0.1"
     tapable "^0.2.5"
 
+eqcss@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/eqcss/-/eqcss-1.7.0.tgz#68ccc9e97ea1c8b6bccf125a9f6bdab23b881949"
+
 errno@^0.1.3:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/errno/-/errno-0.1.4.tgz#b896e23a9e5e8ba33871fc996abd3635fc9a1c7d"

@@ -7,22 +7,16 @@
   &__info {
     width: 100%;
     display: flex;
-    padding: 2rw;
     box-sizing: border-box;
-    font-size: 6rw;
     align-items: center;
   }
 
   &__avatar {
     border-radius: 100%;
     background: #eee;
-    border: 0.5rmin solid #666;
-    flex: 0 0 13rw;
-    height: 13rw;
   }
 
   &__name {
-    padding-left: 2rw;
     white-space: nowrap;
     flex: 0 0 auto;
     overflow: hidden;
@@ -31,7 +25,6 @@
   }
 
   &__username {
-    padding: 0 2rw;
     white-space: nowrap;
     flex: 1 0 auto;
     overflow: hidden;
@@ -51,7 +44,6 @@
     background: #ccc;
     padding-bottom: 75%;
     height: 0;
-    font-size: 20rh;
     color: #999;
     position: relative;
     margin: 4% 5% 5% 10%;
@@ -68,8 +60,6 @@
 
   &__actions {
     display: flex;
-    font-size: 5rh;
-    line-height: 10rh;
     border-top: 1px solid #aaa;
   }
 
@@ -82,5 +72,35 @@
     &:hover {
       background-color: #bbb;
     }
+  }
+}
+
+@element '.Post' {
+  $this .Post__info {
+    padding: 2ew;
+    font-size: 6ew;
+  }
+
+  $this .Post__avatar {
+    border: 0.5emin solid #666;
+    flex: 0 0 13ew;
+    height: 13ew;
+  }
+
+  $this .Post__name {
+    padding-left: 2ew;
+  }
+
+  $this .Post__username {
+    padding: 0 2ew;
+  }
+
+  $this .Post__image {
+    font-size: 20eh;
+  }
+
+  $this .Post__actions {
+    font-size: 5eh;
+    line-height: 10eh;
   }
 }
