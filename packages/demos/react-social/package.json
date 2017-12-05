@@ -21,7 +21,8 @@
     "react-dom": "^15.6.1",
     "style-loader": "^0.18.2",
     "webpack": "^3.3.0",
-    "webpack-bundle-analyzer": "^2.8.3"
+    "webpack-bundle-analyzer": "^2.8.3",
+    "@zeecoder/container-query": "^2.0.0"
   },
   "scripts": {
     "build": "webpack"
