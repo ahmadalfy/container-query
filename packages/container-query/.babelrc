@@ -1,37 +1,27 @@
 {
   "presets": [
     [
-      "env",
+      "@babel/preset-env",
       {
         "modules": false,
         "targets": {
-          "browsers": [
-            "IE >= 10",
-            "Chrome >= 10",
-            "Opera >= 15",
-            "FF >= 10",
-            "Edge >= 12"
-          ]
+          "browsers": ["chrome > 60"]
         }
       }
     ]
   ],
   "env": {
-    "test": {
-      "presets": [
-        [
-          "env",
-          {
-            "targets": {
-              "browsers": ["last 2 versions"]
-            }
-          }
-        ]
-      ],
-      "plugins": ["transform-flow-strip-types"]
-    },
     "production": {
-      "plugins": ["transform-flow-strip-types", "lodash", "external-helpers"]
+      "plugins": [
+        "@babel/plugin-transform-flow-strip-types",
+        [
+          "@babel/plugin-transform-runtime",
+          {
+            "useESModules": true
+          }
+        ],
+        "babel-plugin-lodash"
+      ]
     }
   }
 }

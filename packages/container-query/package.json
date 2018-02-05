@@ -21,15 +21,16 @@
     "prepublish": "yarn build"
   },
   "devDependencies": {
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-lodash": "^3.2.11",
-    "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "babel-preset-env": "^1.6.0",
+    "@babel/core": "^7.0.0-beta.39",
+    "babel-plugin-lodash": "^3.3.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.0.0-beta.39",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
     "flow-bin": "^0.55.0",
     "jest": "^21.1.0",
     "npm-run-all": "^4.1.2",
     "rollup": "^0.50.0",
-    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-babel": "^4.0.0-beta",
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-flow": "^1.1.1",
     "rollup-plugin-node-resolve": "^3.0.0",
@@ -38,6 +39,7 @@
     "uglify-es": "^3.0.26"
   },
   "dependencies": {
+    "babel-runtime": "^6.26.0",
     "es6-weak-map": "^2.0.2",
     "lodash": "^4.17.4",
     "mutation-observer": "^1.0.2",

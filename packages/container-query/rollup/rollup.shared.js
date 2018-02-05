@@ -3,7 +3,7 @@ import babel from "rollup-plugin-babel";
 
 export default {
   input: __dirname + "/../src/Container.js",
-  plugins: [flow(), babel()],
+  plugins: [flow(), babel({ runtimeHelpers: true })],
   external: [
     "es6-weak-map",
     "object-assign",
